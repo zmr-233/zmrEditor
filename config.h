@@ -1,0 +1,4 @@
+/* #undef PROJECT_VERSION_MAJOR */
+/* #undef PROJECT_VERSION_MINOR */
+/* #undef PROJECT_VERSION_PATCH */
+#define DEB

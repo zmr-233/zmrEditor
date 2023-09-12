@@ -1,0 +1,4 @@
+#cmakedefine PROJECT_VERSION_MAJOR
+#cmakedefine PROJECT_VERSION_MINOR
+#cmakedefine PROJECT_VERSION_PATCH
+#cmakedefine DEB
