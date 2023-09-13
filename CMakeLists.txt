@@ -30,6 +30,9 @@ set (TARGET "zmrEditor${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 add_executable(${TARGET} ${SRCS})
 
 find_package(X11 REQUIRED)
+cmake_policy(SET CMP0072 NEW)
+find_package(OpenGL REQUIRED)
+target_link_libraries(${TARGET} PRIVATE ${OPENGL_LIBRARIES})
 target_link_libraries(${TARGET} PRIVATE ${X11_LIBRARIES})
 target_link_libraries(${TARGET} PRIVATE sfml-graphics)
 target_compile_features(${TARGET} PRIVATE cxx_std_17)    
